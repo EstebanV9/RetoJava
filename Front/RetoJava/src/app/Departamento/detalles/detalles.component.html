@@ -1,0 +1,53 @@
+<div class="container mx-auto" style="width: 550px;" *ngIf="persona">
+    <div class="card">
+        <div class="car-header text-white bg-dark text-center">
+            <h3>Detalles del Empleado</h3>
+        </div>
+        <div class="table-responsive-xl">
+            <table class="table table-borderleb table-dark table-sm">
+                <tr style="width: 100px;">
+                    <td>ID:</td>
+                    <td>{{persona.id}}</td>
+                </tr>
+                <tr>
+                    <td>Nombre:</td>
+                    <td>{{persona.nombre}}</td>
+                </tr>
+                <tr>
+                    <td>Apellidos:</td>
+                    <td>{{persona.apellidos}}</td>
+                </tr>
+                <tr>
+                    <td>Número de Documento:</td>
+                    <td>{{persona.numeroDocumento}}</td>
+                </tr>
+                <tr>
+                    <td>Correo:</td>
+                    <td>{{persona.correo}}</td>
+                </tr>
+                <tr>
+                    <td>Teléfono:</td>
+                    <td>{{persona.telefono}}</td>
+                </tr>
+                <tr>
+                    <td>Estado:</td>
+                    <td>{{persona.activo}}</td>
+                </tr>
+                <tr>
+                    <td>Salario:</td>
+                    <td>${{persona.salario}}</td>
+                </tr>
+                <tr>
+                    <td>Departamento:</td>
+                    <td>{{persona.departamento}}</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="btn btn-primary btn-block btn-sm" (click)="volver()"><i class="fas fa-arrow-alt-circle-left"></i>Volver</button>
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </div>
+</div>

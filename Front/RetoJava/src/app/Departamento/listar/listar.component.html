@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card">
+        <div class="car-header text-white bg-dark text-center">
+            <h3>Lista de Departamentos</h3>
+        </div>
+        <div class="table-responsive-xl">
+            <table class="table table-borderleb table-striped table-dark table-sm">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Código</th>
+                        <th>Ver</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let departamento of departamentos" class="text-left">
+                        <td>{{departamento.id}}</td>
+                        <td>{{departamento.nombre}}</td>
+                        <td>{{departamento.descripcion}}</td>
+                        <td>{{departamento.codigo}}</td>
+                        <td><button class="btn btn-outline-primary btn-sm" routerLink="/Departamentos/detalles/{{departamento.id}}"><i class="far fa-eye"></i> Ver</button></td>
+                        <td><button class="btn btn-outline-warning btn-sm" routerLink="/Departamentos/editar/{{departamento.id}}"><i class="far fa-edit"></i> Editar</button></td>
+                        <td><button class="btn btn-outline-danger btn-sm" (click)="eliminar(departamento.id)"><i class="far fa-trash-alt"></i> Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

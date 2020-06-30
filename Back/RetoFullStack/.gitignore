@@ -1,0 +1,86 @@
+HELP.md
+
+# Clases compiladas
+Conectados/*.class
+
+# Logs
+RetoFullStack/logs/
+RetoFullStack/*.logs
+RetoFullStack/log/
+RetoFullStack/*.log
+
+# Archivos comprimidos
+RetoFullStack/*.war
+RetoFullStack/*.nar
+RetoFullStack/*.ear
+RetoFullStack/*.zip
+RetoFullStack/*.tar.gz
+RetoFullStack/*.rar
+
+# Reportes serenity
+RetoFullStack/target/
+
+# Gradle
+.gradle/
+RetoFullStack/.gradle/
+RetoFullStack/build/
+
+# No ignorar el Gradle Wrapper
+!RetoFullStack/gradle\wrapper\gradle-wrapper.jar
+
+# Archivos eclipse
+RetoFullStack/.classpath
+RetoFullStack/.project
+RetoFullStack/.metadata
+RetoFullStack/bin/
+RetoFullStack/tmp/
+RetoFullStack/*.tmp
+RetoFullStack/*.bak
+RetoFullStack/*.swp
+RetoFullStack/*~.nib
+RetoFullStack/local.properties
+RetoFullStack/.settings/
+RetoFullStack/.loadpath
+RetoFullStack/.recommenders
+RetoFullStack/.idea/
+RetoFullStack/out/
+
+# Locally stored "Eclipse launch configurations"
+RetoFullStack/*.launch
+
+### Sonar ###
+#Sonar generated dir
+RetoFullStack/.sonar/
+
+
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
