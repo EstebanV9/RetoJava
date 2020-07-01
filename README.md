@@ -22,6 +22,10 @@ La solución del proyecto fue contruida con las siguientes herramientas y/o apli
     *MySQL 8.0.17
     *Visual Studio Code
 
+## Extracción del proyecto del repositorio
+
+Para clonar el proyecto se debe situar dentro de una carpeta vacia, dar click derecho y ejecutar el aplicativo git `Git Batch Here` luego ejecutar el comando `git init` para inicializar el repositorio local, seguidamente ejecutar el comando `git clone https://github.com/EstebanV9/RetoJava.git` y se extraera el proyecto con todos sus complementos.
+
 ## Comandos para ejecutar los proyectos
 
 Para la ejecución del Back-end se debe importar el proyecto Back/RetoFullStack en el IDE y luego situarse sobre la clase `RetoFullStack/src/main/java/RetoFullStackApplication.java` y presionar en "Ejecutar Java Application" y se iniciará el proyecto en Spring Boot v2.3.1
